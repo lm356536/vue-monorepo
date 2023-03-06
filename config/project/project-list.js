@@ -11,5 +11,11 @@ export default [
     root: "admin1",
     projectKey: "admin1",
   },
+  {
+    enName: "lm",
+    cnName:  "lm",
+    root:  "lm",
+    projectKey: "lm",
+  }
 
 ]
