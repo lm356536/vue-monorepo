@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-
+import Text from '@components/business/txetTest/Text.vue'
+import Button from "@components/business/buttonTest/Button.vue"
 defineProps<{ msg: string }>()
 
 const count = ref(0)
 </script>
 
 <template>
+  <Text/>
   <h1>{{ msg }}</h1>
 
   <div class="card">

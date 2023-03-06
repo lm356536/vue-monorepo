@@ -1,15 +1,16 @@
 {
-  "name": "@projects/admin1",
+  "name": "@projects/admin2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "cross-env type=dev node start.js",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "Container.vue": "link:@/views/list/Container.vue",
+    "@basic/core": "workspace:^1.0.0",
+    "@components/business": "workspace:^1.0.0",
     "vue": "^3.2.37"
   },
   "devDependencies": {

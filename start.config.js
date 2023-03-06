@@ -20,7 +20,7 @@ inquirer
     console.log(`>>> 当前项目标识：当前产品标识：${bold(magentaBright(project.enName))}`);
 
     const cmd = `pnpm --F @projects/${project.enName} run dev `;
-
+    console.log(cmd)
     let envVars = {
       selectedProject: project.enName,
       product: prd,

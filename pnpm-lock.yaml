@@ -91,11 +91,13 @@ importers:
   packages/projects/admin1:
     specifiers:
       '@vitejs/plugin-vue': ^3.0.0
+      Container.vue: link:@/views/list/Container.vue
       typescript: ^4.6.4
       vite: ^3.0.0
       vue: ^3.2.37
       vue-tsc: ^0.38.4
     dependencies:
+      Container.vue: link:@/views/list/Container.vue
       vue: 3.2.37
     devDependencies:
       '@vitejs/plugin-vue': 3.0.1_vite@3.0.4+vue@3.2.37
@@ -103,14 +105,35 @@ importers:
       vite: 3.0.4
       vue-tsc: 0.38.9_typescript@4.7.4
 
+  packages/projects/admin2:
+    specifiers:
+      '@basic/core': workspace:^1.0.0
+      '@components/business': workspace:^1.0.0
+      '@vitejs/plugin-vue': ^3.0.0
+      typescript: ^4.6.4
+      vite: ^3.0.0
+      vue: ^3.2.37
+      vue-tsc: ^0.38.4
+    dependencies:
+      '@basic/core': link:../../basic/core
+      '@components/business': link:../../components/business
+      vue: 3.2.47
+    devDependencies:
+      '@vitejs/plugin-vue': 3.0.1_vite@3.0.4+vue@3.2.47
+      typescript: 4.9.5
+      vite: 3.0.4
+      vue-tsc: 0.38.9_typescript@4.9.5
+
   packages/projects/lm:
     specifiers:
+      '@components/business': workspace:^1.0.0
       '@vitejs/plugin-vue': ^4.0.0
       typescript: ^4.9.3
       vite: ^4.1.0
       vue: ^3.2.45
       vue-tsc: ^1.0.24
     dependencies:
+      '@components/business': link:../../components/business
       vue: 3.2.47
     devDependencies:
       '@vitejs/plugin-vue': 4.0.0_vite@4.1.4+vue@3.2.47
@@ -654,6 +677,17 @@ packages:
     dependencies:
       vite: 3.0.4
       vue: 3.2.37
+    dev: true
+
+  /@vitejs/plugin-vue/3.0.1_vite@3.0.4+vue@3.2.47:
+    resolution: {integrity: sha512-Ll9JgxG7ONIz/XZv3dssfoMUDu9qAnlJ+km+pBA0teYSXzwPCIzS/e1bmwNYl5dcQGs677D21amgfYAnzMl17A==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      vite: ^3.0.0
+      vue: ^3.2.25
+    dependencies:
+      vite: 3.0.4
+      vue: 3.2.47
     dev: true
 
   /@vitejs/plugin-vue/4.0.0_vite@4.1.4+vue@3.2.47:
@@ -2483,6 +2517,16 @@ packages:
     dependencies:
       '@volar/vue-typescript': 0.38.9
       typescript: 4.7.4
+    dev: true
+
+  /vue-tsc/0.38.9_typescript@4.9.5:
+    resolution: {integrity: sha512-Yoy5phgvGqyF98Fb4mYqboR4Q149jrdcGv5kSmufXJUq++RZJ2iMVG0g6zl+v3t4ORVWkQmRpsV4x2szufZ0LQ==}
+    hasBin: true
+    peerDependencies:
+      typescript: '*'
+    dependencies:
+      '@volar/vue-typescript': 0.38.9
+      typescript: 4.9.5
     dev: true
 
   /vue-tsc/1.2.0_typescript@4.9.5:

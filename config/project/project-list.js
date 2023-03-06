@@ -16,6 +16,12 @@ export default [
     cnName:  "lm",
     root:  "lm",
     projectKey: "lm",
+  },
+  {
+    enName: "admin2",
+    cnName:  "admin2",
+    root:  "admin2",
+    projectKey: "admin2",
   }
 
 ]
